@@ -1,0 +1,98 @@
+.videobackground{
+    position: fixed;
+    right:0;
+    bottom:0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -100;
+    width: auto;
+    height: auto;
+}
+
+header{
+    background: linear-gradient(to right,rgb(236, 233, 253) ,rgba(255,255,0,0.1));
+    
+    height: 800vh;
+    z-index: -99;
+}
+
+.logo{
+    width: 400px;
+    float: left;
+    margin-left:100px;
+    margin-top:65px;
+    z-index: 1000;
+}
+
+.allmenu{
+    list-style: none;
+    float: right;
+    margin-top:100px;
+}
+
+.eachitem{
+    display: inline;
+    color: floralwhite;
+    font-size: 250%;
+    margin-right:50px;
+    cursor: pointer;    
+}
+
+.eachitem:hover{
+    color:gold;
+    border: 1px solid gold;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: all 0.2s ease-in;
+    padding: 10px;
+    background-color: rgba(253, 253, 224, 0.424);
+}
+
+
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.messagecontainer{
+    position: absolute;
+    top:44%;
+    left:6%;
+    font-size: 400%;
+    width:40%;
+}
+
+.highlightmessage{
+    font-weight: bold;
+    color: brown;
+    text-shadow:2px 2px white;
+}
+
+.buttoncontainer{
+    position: absolute;
+}
+
+button{
+    text-decoration: none;
+    font-size:60%;
+    background-color: antiquewhite;
+    padding:15px;
+    border-radius: 15px;
+    margin-top:30px;
+}
+
+
+
+body{
+    margin:0;
+    padding:0;
+}
+
+button:hover{
+    color:goldenrod;
+    transition: all 0.3s ease-in-out;
+    padding-bottom: 20px;
+    padding-right:20px;
+    border-radius:20px;
+    background-color: rgba(253, 253, 224, 0.424);
+}

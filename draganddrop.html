@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/dragdrop.css">
+    <title>Drag And Drop</title>
+</head>
+
+<body>
+    <h1>Drag and Drop</h1>
+    <div id="dragStart" ondragover="sourceDivDragOver(event)">
+        <img src="image/logo.png" width="200px" id="dragImage" draggable="true" ondragstart="dragImageNow(event)" ondrop="dropImageNowBack(event)">
+    </div>
+
+    <div id="dragStop" ondragstart="dragImageNowBack(event)" ondrop="dropImageNow(event)" ondragover="targetDivDragOver(event)">
+        Drop CTS over here!
+    </div>
+
+
+    <script src="js/dragdrop.js"></script>
+</body>
+
+</html>

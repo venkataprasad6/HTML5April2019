@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML5 new elements</title>
+</head>
+
+<body>
+    <h3>HTML5 Form</h3>
+    <form>
+        <fieldset>
+            <legend>Personal Details</legend>
+            <div>
+                <label>First Name</label>
+                <input type="text" pattern="^[a-zA-Z]*$" placeholder="first name" required>
+            </div>
+            <div>
+                <label>DOB</label>
+                <input type="Date">
+            </div>
+            <div>
+                <label>Email</label>
+                <input type="email" name="" id="">
+            </div>
+            <div>
+                <label>URL</label>
+                <input type="url">
+            </div>
+            <div>
+                <label>Age</label>
+                <input type="number" step="5" min="10" max="90">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Skills</legend>
+            <div>
+                <label>Rate HTML5 Skill</label>
+                <input type="range" min="0" max="10" step="1">
+            </div>
+            <div>
+                <label>Last Worked</label>
+                <input type="date" min="2019-04-15" step="2">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Misc</legend>
+            <div>
+                <input type="color">
+            </div>
+            <div>
+                <label>Quantity</label>
+                <input type="text" list="quantity">
+                <input type="range" list="quantity" min="10" max="90">
+                <datalist id="quantity">
+                    <option value="10">10</option>
+                    <option value="20">20</option>
+                    <option value="30">30</option>
+                    <option value="40">40</option>
+                    <option value="50">50</option>
+                    <option value="60">60</option>
+                    <option value="70">70</option>
+                    <option value="80">80</option>
+                    <option value="90">90</option>
+                </datalist>
+            </div>
+            <div>
+                <label>Progress in HTML5</label>
+                <progress value="20" min="0" max="100"></progress>
+            </div>
+        </fieldset>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</body>
+
+</html>.

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML5 Beginner</title>
+</head>
+<body>
+    <h1>Welcome to HTML5</h1>
+    <h3>Video Element</h3>
+<video id="myvideo" controls width="500" muted>
+    <source src="mov_bbb.mp4" ><source>
+    <source src="mov_bbb.avi" ><source>
+    <source src="mov_bbb.ogg" ><source>
+</video>
+<br>
+<button onclick="videoPlay()">Play</button>
+<button onclick="videoPause()">Pause</button>
+<hr>
+<h3>Youtube Video</h3>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Puk_pzMGd7c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<script>
+    var videoref = document.getElementById("myvideo")
+
+    var videoPlay = function(){
+        console.log("videoPlay called!")
+        videoref.play()
+    }   
+    
+    var videoPause = function(){
+        videoref.pause()
+    }
+
+</script>
+</body>
+</html>
